@@ -24,7 +24,7 @@ body {
 
 .items-wrapper {
   width: 95%;
-  height: 90%;
+  height: 94%;
   border-radius: 2%;
   overflow: hidden;
   align-self: center;
@@ -33,7 +33,7 @@ body {
 .items-container {
   display: flex;
   width: 400%;
-  height: 100%;
+  height: 87%;
 }
 
 .slider-item {
@@ -67,6 +67,7 @@ body {
 
 .txt {
   width: 25%;
+  transition: all 0.5s ease;
 }
 
 .navigation {
@@ -95,18 +96,36 @@ body {
   visibility: hidden;
 }
 
-#radio1:checked ~ .s1 {
+/*img*/
+#radio1:checked ~ .items-container .s1 {
   margin-left: 0;
 }
 
-#radio2:checked ~ .s1 {
+#radio2:checked ~ .items-container .s1 {
   margin-left: -25%;
 }
 
-#radio3:checked ~ .s1 {
+#radio3:checked ~ .items-container .s1 {
   margin-left: -50%;
 }
 
-#radio4:checked ~ .s1 {
+#radio4:checked ~ .items-container .s1 {
+  margin-left: -75%;
+}
+
+/*text*/
+#radio1:checked ~ .wrapper .t1 {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .wrapper .t1 {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .wrapper .t1 {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .wrapper .t1 {
   margin-left: -75%;
 }
