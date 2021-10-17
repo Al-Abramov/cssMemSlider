@@ -73,6 +73,7 @@ body {
   width: 25%;
   color: #fff;
   transition: all 0.5s ease;
+  opacity: 0;
 }
 
 .navigation {
@@ -82,23 +83,30 @@ body {
 }
 
 .navigation li {
-  display: inline-block;
-  cursor: pointer;
-  padding: 5px 0;
+  display: flex;
 }
 
 .bullet {
-  display: block;
-  width: 8px;
-  height: 8px;
-  margin: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
-  background-color: #55a6eb;
   border-radius: 50%;
   transition: all 0.5s ease;
 }
 
-.bullet:hover {
+.bullet-span {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #55a6eb;
+  margin: 5px;
+}
+
+.bullet .bullet-span:hover {
   background-color: #fff;
 }
 
@@ -141,23 +149,41 @@ body {
   margin-left: -75%;
 }
 
+
+#radio1:checked ~ .wrapper .t1 {
+  opacity: 1;
+}
+
+#radio2:checked ~ .wrapper .t2 {
+  opacity: 1;
+}
+
+#radio3:checked ~ .wrapper .t3 {
+  opacity: 1;
+}
+
+#radio4:checked ~ .wrapper .t4 {
+  opacity: 1;
+}
+
+
 /**/
-#radio1:checked ~ .wrapper .navigation li:nth-child(1) .bullet {
+#radio1:checked ~ .wrapper .navigation li:nth-child(1) .bullet .bullet-span{
   border: 1px solid #fff;
   background-color: transparent;
 }
 
-#radio2:checked ~ .wrapper .navigation li:nth-child(2) .bullet {
+#radio2:checked ~ .wrapper .navigation li:nth-child(2) .bullet .bullet-span{
   border: 1px solid #fff;
   background-color: transparent;
 }
 
-#radio3:checked ~ .wrapper .navigation li:nth-child(3) .bullet {
+#radio3:checked ~ .wrapper .navigation li:nth-child(3) .bullet .bullet-span{
   border: 1px solid #fff;
   background-color: transparent;
 }
 
-#radio4:checked ~ .wrapper .navigation li:nth-child(4) .bullet {
+#radio4:checked ~ .wrapper .navigation li:nth-child(4) .bullet .bullet-span{
   border: 1px solid #fff;
   background-color: transparent;
 }
