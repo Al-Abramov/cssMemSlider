@@ -4,8 +4,12 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
-  background-color: #8f8989;
+  background-color: #c7c6c6;
 }
 
 .slider {
@@ -15,7 +19,7 @@ body {
   flex-direction: column;
   margin: 70px auto 0px;
   overflow: hidden;
-  background: #225033;
+  background: #242121;
 }
 
 .items {
@@ -67,6 +71,7 @@ body {
 
 .txt {
   width: 25%;
+  color: #fff;
   transition: all 0.5s ease;
 }
 
@@ -76,19 +81,25 @@ body {
   margin-right: 2%;
 }
 
+.navigation li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
 .bullet {
+  display: block;
   width: 8px;
   height: 8px;
   margin: 6px;
   cursor: pointer;
-  background-color: aquamarine;
+  background-color: #55a6eb;
   border-radius: 50%;
   transition: all 0.5s ease;
 }
 
 .bullet:hover {
-  transform: scale(1.05);
-  filter: brightness(2);
+  background-color: #fff;
 }
 
 .radio-btn {
@@ -128,4 +139,25 @@ body {
 
 #radio4:checked ~ .wrapper .t1 {
   margin-left: -75%;
+}
+
+/**/
+#radio1:checked ~ .wrapper .navigation li:nth-child(1) .bullet {
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+#radio2:checked ~ .wrapper .navigation li:nth-child(2) .bullet {
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+#radio3:checked ~ .wrapper .navigation li:nth-child(3) .bullet {
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+#radio4:checked ~ .wrapper .navigation li:nth-child(4) .bullet {
+  border: 1px solid #fff;
+  background-color: transparent;
 }
