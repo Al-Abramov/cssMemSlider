@@ -13,8 +13,8 @@ body {
 }
 
 .slider {
-  width: 50%;
-  height: 55vh;
+  width: 65%;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   margin: 70px auto 0px;
@@ -27,9 +27,8 @@ body {
 }
 
 .items-wrapper {
-  width: 95%;
+  width: 90%;
   height: 94%;
-  border-radius: 2%;
   overflow: hidden;
   align-self: center;
 }
@@ -37,7 +36,7 @@ body {
 .items-container {
   display: flex;
   width: 400%;
-  height: 87%;
+  height: 85%;
 }
 
 .slider-item {
@@ -55,31 +54,32 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 3%;
-  margin-top: 10px;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .txt-wrapper {
-  width: 25%;
+  width: 80%;
   overflow: hidden;
 }
 
 .txt-container {
   display: flex;
-  width: 400%;
+  width: 600%;
 }
 
 .txt {
   width: 25%;
   color: #fff;
-  transition: all 0.5s ease;
+  transition: all 0.9s ease;
   opacity: 0;
+  font-size: 1.2rem;
+  padding-right: 9%;
 }
 
 .navigation {
   display: flex;
   align-self: end;
-  margin-right: 2%;
 }
 
 .navigation li {
@@ -90,8 +90,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25px;
-  height: 25px;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
   border-radius: 50%;
   transition: all 0.5s ease;
@@ -99,14 +99,14 @@ body {
 
 .bullet-span {
   display: flex;
-  width: 8px;
-  height: 8px;
+  width: 0.7rem;
+  height: 0.7rem;
   border-radius: 50%;
   background-color: #55a6eb;
   margin: 5px;
 }
 
-.bullet .bullet-span:hover {
+.bullet:hover .bullet-span{
   background-color: #fff;
 }
 
@@ -186,4 +186,38 @@ body {
 #radio4:checked ~ .wrapper .navigation li:nth-child(4) .bullet .bullet-span{
   border: 1px solid #fff;
   background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .slider {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .items-container {
+    height: 73%;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .txt-wrapper {
+    order: 2;
+    align-self: baseline;
+    margin-top: 1rem;
+  }
+
+  .navigation {
+    order: 1;
+    align-self: center;
+  }
 }
