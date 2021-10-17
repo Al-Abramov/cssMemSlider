@@ -17,7 +17,7 @@ body {
   height: 65vh;
   display: flex;
   flex-direction: column;
-  margin: 70px auto 0px;
+  margin: 4.5rem auto 0;
   overflow: hidden;
   background: #242121;
 }
@@ -55,7 +55,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 
 .txt-wrapper {
@@ -103,7 +103,7 @@ body {
   height: 0.7rem;
   border-radius: 50%;
   background-color: #55a6eb;
-  margin: 5px;
+  margin: 0.32rem;
 }
 
 .bullet:hover .bullet-span{
@@ -169,22 +169,22 @@ body {
 
 /**/
 #radio1:checked ~ .wrapper .navigation li:nth-child(1) .bullet .bullet-span{
-  border: 1px solid #fff;
+  border: 0.063rem solid #fff;
   background-color: transparent;
 }
 
 #radio2:checked ~ .wrapper .navigation li:nth-child(2) .bullet .bullet-span{
-  border: 1px solid #fff;
+  border: 0.063rem solid #fff;
   background-color: transparent;
 }
 
 #radio3:checked ~ .wrapper .navigation li:nth-child(3) .bullet .bullet-span{
-  border: 1px solid #fff;
+  border: 0.063rem solid #fff;
   background-color: transparent;
 }
 
 #radio4:checked ~ .wrapper .navigation li:nth-child(4) .bullet .bullet-span{
-  border: 1px solid #fff;
+  border: 0.063rem solid #fff;
   background-color: transparent;
 }
 
@@ -203,7 +203,7 @@ body {
   }
 
   .items-container {
-    height: 73%;
+    height: 70%;
   }
 
   .wrapper {
