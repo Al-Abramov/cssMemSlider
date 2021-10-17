@@ -47,6 +47,27 @@ body {
   height: 100%;
 } 
 
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+  margin-top: 10px;
+}
+
+.txt-wrapper {
+  width: 25%;
+  overflow: hidden;
+}
+
+.txt-container {
+  display: flex;
+  width: 400%;
+}
+
+.txt {
+  width: 25%;
+}
 
 .navigation {
   display: flex;
